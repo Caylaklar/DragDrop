@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 400px;
+    height: 350px;
+    gap: 30px;
+
+}
+
+.container .boxes {
+    width: 200px;
+    height: 200px;
+    border-radius: 28px;
+    border: 2px solid black;
+}
+
+.container .boxes .image {
+    background-size: cover;
+    background-image: url(../img/ramo.jpg);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 28px;
+}
+
+.boxes.hover {
+    border: 2px dashed black;
+}
